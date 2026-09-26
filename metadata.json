@@ -1,0 +1,6 @@
+{
+  "name": "BACKLOG SAVER",
+  "description": "Professional educational digital marketplace for Indian students to discover, preview, and purchase authorized PDF study materials.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
