@@ -18,12 +18,8 @@ export const LoginPage: React.FC = () => {
     setError(null);
     setLoading(true);
     try {
-      const user = await login(email.trim(), password);
-      if (user.role === 'admin' || user.role === 'super_admin') {
-        navigate('/admin');
-      } else {
-        navigate('/account/purchases');
-      }
+      await login(email.trim(), password);
+      navigate('/account/purchases');
     } catch (err: any) {
       setError(err.message || 'Invalid email or password.');
     } finally {
@@ -189,16 +185,6 @@ export const LoginPage: React.FC = () => {
               className="px-2.5 py-1 bg-white dark:bg-slate-700 hover:bg-slate-100 dark:hover:bg-slate-600 border border-slate-200 dark:border-slate-600 rounded-lg text-slate-700 dark:text-slate-200 text-[11px] font-semibold cursor-pointer"
             >
               Student Demo
-            </button>
-            <button
-              type="button"
-              onClick={() => {
-                setEmail('admin@backlogsaver.in');
-                setPassword('admin12345');
-              }}
-              className="px-2.5 py-1 bg-white dark:bg-slate-700 hover:bg-slate-100 dark:hover:bg-slate-600 border border-slate-200 dark:border-slate-600 rounded-lg text-purple-700 dark:text-purple-300 text-[11px] font-semibold cursor-pointer"
-            >
-              Admin Demo
             </button>
           </div>
         </div>

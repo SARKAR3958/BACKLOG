@@ -51,13 +51,13 @@ import type {
 } from '../types';
 
 export const firebaseConfig = {
-  apiKey: import.meta.env.VITE_FIREBASE_API_KEY || "AIzaSyBBypC3rLOwBGSSqgrN1NbzOTp3DD1od1A",
-  authDomain: import.meta.env.VITE_FIREBASE_AUTH_DOMAIN || "backlog-saver.firebaseapp.com",
-  databaseURL: import.meta.env.VITE_FIREBASE_DATABASE_URL || "https://backlog-saver-default-rtdb.firebaseio.com",
-  projectId: import.meta.env.VITE_FIREBASE_PROJECT_ID || "backlog-saver",
-  storageBucket: import.meta.env.VITE_FIREBASE_STORAGE_BUCKET || "backlog-saver.firebasestorage.app",
-  messagingSenderId: import.meta.env.VITE_FIREBASE_MESSAGING_SENDER_ID || "560406543504",
-  appId: import.meta.env.VITE_FIREBASE_APP_ID || "1:560406543504:web:c6b2058b8b996fd4e2ac15",
+  apiKey: import.meta.env.VITE_FIREBASE_API_KEY || "",
+  authDomain: import.meta.env.VITE_FIREBASE_AUTH_DOMAIN || "",
+  databaseURL: import.meta.env.VITE_FIREBASE_DATABASE_URL || "",
+  projectId: import.meta.env.VITE_FIREBASE_PROJECT_ID || "",
+  storageBucket: import.meta.env.VITE_FIREBASE_STORAGE_BUCKET || "",
+  messagingSenderId: import.meta.env.VITE_FIREBASE_MESSAGING_SENDER_ID || "",
+  appId: import.meta.env.VITE_FIREBASE_APP_ID || "",
 };
 
 // Initialize Firebase safely
