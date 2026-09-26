@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" width="100%" height="100%">
+  <defs>
+    <linearGradient id="backlogGrad" x1="0%" y1="100%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#4F46E5"/>
+      <stop offset="100%" stop-color="#9333EA"/>
+    </linearGradient>
+  </defs>
+  <rect width="100" height="100" rx="26" fill="url(#backlogGrad)"/>
+  <path d="M50 21L13 39L50 57L87 39L50 21Z" fill="#FFFFFF"/>
+  <path d="M26 47V67C26 67 34 78 50 78C66 78 74 67 74 67V47" fill="none" stroke="#FFFFFF" stroke-width="7" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M87 39V65" fill="none" stroke="#FFFFFF" stroke-width="7" stroke-linecap="round"/>
+</svg>
